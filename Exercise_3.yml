@@ -1,0 +1,23 @@
+name: exercise_3
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test_1:
+   runs-on: ubuntu-latest
+    echo "============================="
+    echo "  System Information Report  "
+    echo "============================="
+    echo ""
+    echo "Hostname : $(hostname)"
+    echo "OS       : $(uname -s)"
+    echo "Kernel   : $(uname -r)"
+    echo "User     : $(whoami)"
+    echo "Directory: $(pwd)"
+    echo "Date     : $(date)"
+    echo ""
+    echo "============================="
+    echo "  Script completed!          "
+    echo "============================="
